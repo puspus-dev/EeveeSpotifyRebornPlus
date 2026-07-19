@@ -20,7 +20,7 @@ class ProfileSettingsSectionHook: ClassHook<NSObject> {
             let eeveeSettingsController = EeveeSettingsViewController(
                 rootSettingsController.view.bounds,
                 settingsView: AnyView(EeveeSettingsView(navigationController: navigationController)),
-                navigationTitle: "EeveeSpotify"
+                navigationTitle: "EeveeSpotify Plus"
             )
             
             //
@@ -62,7 +62,7 @@ class ProfileSettingsSectionHook: ClassHook<NSObject> {
         if row == 1 {
             let settingsTableCell = Dynamic.SPTSettingsTableViewCell
                 .alloc(interface: SPTSettingsTableViewCell.self)
-                .initWithStyle(3, reuseIdentifier: "EeveeSpotify")
+                .initWithStyle(3, reuseIdentifier: "EeveeSpotify Plus")
             
             let tableViewCell = Dynamic.convert(settingsTableCell, to: UITableViewCell.self)
 
@@ -72,7 +72,7 @@ class ProfileSettingsSectionHook: ClassHook<NSObject> {
             )
             .disclosureAccessoryView()
             
-            tableViewCell.textLabel?.text = "EeveeSpotify"
+            tableViewCell.textLabel?.text = "EeveeSpotify Plus"
             return tableViewCell
         }
 
