@@ -13,8 +13,8 @@ func getPremiumPlanBadge() throws -> Data {
 func getPremiumPlanRowData(originalPremiumPlanRow: PremiumPlanRow) throws -> Data {
     var premiumPlanRow = originalPremiumPlanRow
     
-    premiumPlanRow.planName = "EeveeSpotify"
-    premiumPlanRow.planIdentifier = "Eevee"
+    premiumPlanRow.planName = "EeveeSpotify Plus"
+    premiumPlanRow.planIdentifier = "Eevee +"
     premiumPlanRow.colorCode = "#FFD2D7"
     
     return try premiumPlanRow.serializedData()
