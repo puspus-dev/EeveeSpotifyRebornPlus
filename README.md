@@ -1,3 +1,6 @@
+# To d0wnl0ad the IPA, join the discord server
+https://discord.gg/8zDDDjASTF
+
 # Discontinuation Notice
 
 https://t.me/SpotilifeIPAs/196
